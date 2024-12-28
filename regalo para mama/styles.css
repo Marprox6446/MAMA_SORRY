@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header h1 {
+    font-size: 3rem;
+    color: #ff2e63;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  /* Message */
+  .message {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #f4f4f4;
+  }
+  
+  /* Anime Section */
+  .anime-section {
+    margin: 20px 0;
+  }
+  
+  .anime-gif {
+    width: 300px;
+    border: 5px solid #ff2e63;
+    border-radius: 10px;
+  }
+  
+  /* Surprise Button */
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #ff2e63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    background-color: #f34365;
+  }
+  
+  /* Surprise Content */
+  .hidden {
+    display: none;
+  }
+  
+  .surprise-message {
+    font-size: 1.8rem;
+    color: #f4f4f4;
+    margin: 20px 0;
+  }
+  
+  .surprise-img {
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #777;
+  }
+
+/* Fondo de destellos dinámicos */
+.sparkle-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* No bloquea interacciones */
+    z-index: 1; /* Detrás del contenido principal */
+    overflow: hidden;
+  }
+  
+  .sparkle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+    filter: blur(3px);
+    opacity: 0;
+    animation: sparkleAnimation 5s infinite ease-in-out;
+  }
+  
+  /* Keyframes para destellos dinámicos */
+  @keyframes sparkleAnimation {
+    0% {
+      transform: scale(0.5) translate(-50%, -50%);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2) translate(-50%, -50%);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(0.8) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  /* Añadimos múltiples destellos */
+  .sparkle:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  
+  .sparkle:nth-child(2) {
+    top: 50%;
+    left: 30%;
+    animation-delay: 1s;
+  }
+  
+  .sparkle:nth-child(3) {
+    top: 80%;
+    left: 60%;
+    animation-delay: 2s;
+  }
+  
+  .sparkle:nth-child(4) {
+    top: 40%;
+    left: 80%;
+    animation-delay: 3s;
+  }
+  
+  .sparkle:nth-child(5) {
+    top: 70%;
+    left: 10%;
+    animation-delay: 4s;
+  }
+  
+  /* Ajuste del contenedor */
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  #music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+  }
+  
+  #music-control:hover {
+    background: #555;
+  }
+    
